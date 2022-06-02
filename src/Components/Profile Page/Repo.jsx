@@ -18,7 +18,7 @@ export const Repo = ({ rname, desc }) => {
             />
           </Avatar>
         </div>
-        <div>
+        <div style={{textAlign:"left"}}>
           <p>
             <b>{rname}</b>
           </p>
