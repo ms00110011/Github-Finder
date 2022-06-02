@@ -1,0 +1,88 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.headWrapper {
+    margin: 50px;
+    text-align: left;
+    background-color: whitesmoke;
+    height:200px;
+}
+
+.ProfilesWrapper {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+
+.heading {
+    color: gray;
+    font-size: 24px;
+}
+
+.inputBox {
+    background-color: #2196F3;
+    border: 0;
+    height: 35px;
+    width:350px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+
+.inputBox::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:white;
+    opacity: 1; /* Firefox */
+  }
+
+
+  @media only screen and (max-width: 800px) {
+
+      
+    .ProfilesWrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+
+    .inputBox {
+        width: 180px;
+    }
+
+    .headWrapper {
+        width:70%
+    }
+
+    .heading {
+        font-size: 16px;
+    }
+
+    .ProfilesWrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .subButton {
+        width:10%
+    }
+
+
+
+  }
+
+
+  @media only screen and (max-width: 380px) {
+    .inputBox {
+        width: 150px;
+    }
+  }
+
+
+  
+  @media only screen and (max-width: 300px) {
+    .inputBox {
+        width: 100px;
+    }
+  }
