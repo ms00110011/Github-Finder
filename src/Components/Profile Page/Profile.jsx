@@ -46,8 +46,7 @@ export const Profile = () => {
   return (
     <div style={{ width: "80%", marginLeft: "auto", marginRight: "auto" }}>
       <div className={styles.WrapperPS}>
-        <Link to={"/"}>
-          {" "}
+        <Link style={{textDecoration:"none"}} to={"/"}>
           <p style={{ textAlign: "left", fontSize: "18px", color: "#606060" }}>
             <ArrowBackIcon sx={{ fontSize: "18px" }} /> Back
           </p>

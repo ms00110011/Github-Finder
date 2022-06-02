@@ -43,7 +43,7 @@ export default function SearchCard({img,name}) {
 
 
   return (
-    <Link to={`/profile/${name}`}> <Card sx={{ maxWidth: 250, maxHeight:250, textDecoration:"none" }}>
+    <Link style={{textDecoration:"none"}} to={`/profile/${name}`}> <Card sx={{ maxWidth: 250, maxHeight:250, textDecoration:"none" }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500]}} aria-label="recipe">
