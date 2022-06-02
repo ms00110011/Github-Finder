@@ -1,0 +1,14 @@
+.RepoWrapper {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.RepoWrapper p {
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    
+}

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
+import { Link } from "react-router-dom";
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
@@ -14,7 +15,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import styles from "./ProfileCard.module.css";
+import styles from "./SearchCard.module.css";
 
 
 const ExpandMore = styled((props) => {
@@ -28,7 +29,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-export default function ProfileCard({img,name}) {
+export default function SearchCard({img,name}) {
   const [expanded, setExpanded] = React.useState(false);
 
 
@@ -42,15 +43,16 @@ export default function ProfileCard({img,name}) {
 
 
   return (
-    <Card sx={{ maxWidth: 250, maxHeight:250 }}>
+    <Link to={`/profile/${name}`}> <Card sx={{ maxWidth: 250, maxHeight:250, textDecoration:"none" }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500]}} aria-label="recipe">
             <img style={{width:"100%"}} src={img} alt="" />
           </Avatar>
+          
         }
         title = {name}
       />
-    </Card>
+    </Card></Link>
   );
 }

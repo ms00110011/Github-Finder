@@ -1,88 +1,50 @@
-body {
-    font-family:Arial, Helvetica, sans-serif;
-}
+.WrapperPS {
 
-.headWrapper {
-    margin: 50px;
-    text-align: left;
+    margin: auto;
     background-color: whitesmoke;
-    height:200px;
+    width:100%;
+    height:250px
 }
 
-.ProfilesWrapper {
-    margin: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
+.avatarW {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 30px;
+
 }
 
-.heading {
-    color: gray;
-    font-size: 24px;
-}
-
-.inputBox {
-    background-color: #2196F3;
-    border: 0;
-    height: 35px;
-    width:350px;
+.innerBlock {
+    
+    width:100%;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 30px;
     margin-top: 20px;
-    color: whitesmoke;
 }
 
-.inputBox::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color:white;
-    opacity: 1; /* Firefox */
-  }
+.innerBlock p{
+    font-size: 14px;
+    border: 0;
+    padding: 0;
+    margin:0;
+}
 
+.repo {
+    display: flex;
+}
 
-  @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 380px) {
 
-      
-    .ProfilesWrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-
-  }
-  
-
-  @media only screen and (max-width: 600px) {
-
-    .inputBox {
-        width: 180px;
-    }
-
-    .headWrapper {
-        width:70%
-    }
-
-    .heading {
+    .avatarW h2 {
         font-size: 16px;
     }
 
-    .ProfilesWrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .subButton {
-        width:10%
-    }
-
-
-
   }
 
+  @media only screen and (max-width: 290px) {
 
-  @media only screen and (max-width: 380px) {
-    .inputBox {
-        width: 150px;
+    .avatarW h2 {
+        font-size: 14px;
     }
-  }
 
-
-  
-  @media only screen and (max-width: 300px) {
-    .inputBox {
-        width: 100px;
-    }
   }
