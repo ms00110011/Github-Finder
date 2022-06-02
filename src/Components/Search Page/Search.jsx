@@ -29,8 +29,6 @@ export const Search = () => {
     })
       .then((res) => res.json())
       .then((res) => setData(res.items));
-
-    console.log(data);
     }
 
   };
@@ -75,8 +73,8 @@ export const Search = () => {
       </div>
 
       <div className={styles.ProfilesWrapper}>
-        {data.map((item) => (
-          <SearchCard name={item.login} img={item.avatar_url}  />
+        {data.map((item,i) => (
+          <SearchCard key={i*7} name={item.login} img={item.avatar_url}  />
         ))}
       </div>
     </div>

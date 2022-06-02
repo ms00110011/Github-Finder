@@ -11,7 +11,6 @@ export const Profile = () => {
 
   const { id } = useParams();
 
-  console.log(id);
 
   React.useEffect(() => {
     getUser();
@@ -96,7 +95,7 @@ export const Profile = () => {
       </div>
 
       {repo.map((item, i) => (
-        <Repo rname={item.name} desc={item.description} />
+        <Repo key={i} rname={item.name} desc={item.description} />
       ))}
     </div>
   );

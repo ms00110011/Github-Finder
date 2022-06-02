@@ -3,6 +3,9 @@ import React from "react";
 import styles from "./Repo.module.css";
 
 export const Repo = ({ rname, desc }) => {
+
+  rname = rname.trim()
+
   return (
     <div style={{marginBottom:"20px"}}>
       <div className={styles.RepoWrapper}>
