@@ -39,11 +39,18 @@ export const Search = () => {
     <div>
       <div className={styles.headWrapper}>
         <div style={{ padding: "20px" }}>
-          <div>
-            <p className={styles.heading}>
-              <GitHubIcon sx={{ fontSize: "35px", color: "black" }} /> GitHub
-              Profile Viewer
-            </p>
+          <div style={{display:"flex"}}>
+
+
+          <div>            <p className={styles.heading}>
+              <GitHubIcon sx={{ fontSize: "35px", color: "black" }} /> 
+            </p></div>
+
+            <div style={{marginTop:"18px",marginLeft:"10px"}}>
+              <p>GitHub
+              Profile Viewer</p>
+            </div>
+
           </div>
 
           <form onSubmit={handleSubmit}>
